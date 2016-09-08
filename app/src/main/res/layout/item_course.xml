@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/common16dp"
+
+     >
+    
+
+<ImageView
+        android:id="@+id/img_small"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="centerCrop"
+    android:layout_marginLeft="@dimen/common10dp"
+        android:src="@drawable/img_loading"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/img_small"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/img_small" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="瑜伽"
+            android:textColor="@color/text_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_club"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="悦动健身会所"
+            android:textColor="@color/text_gray_dark"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_cgjw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:text="场馆距我"
+            android:textColor="@color/text_gray_dark"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/tv_cgjw"
+            android:text="500"
+            android:textColor="@color/text_gray_dark"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_mi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/tv_distance"
+            android:text="米"
+            android:textColor="@color/text_gray_dark"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/relativeLayout1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/common16dp"
+        android:layout_alignTop="@+id/relativeLayout1" >
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="评分4.5"
+            android:textColor="@color/text_gray_dark"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="100.00"
+            android:textColor="@color/text_gray_dark"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_dollar"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_money"
+            android:layout_alignBottom="@+id/tv_money"
+            android:layout_toLeftOf="@+id/tv_money"
+            android:gravity="center"
+            android:text="￥"
+            android:textColor="@color/text_gray_dark"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/tv_part"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:text="件"
+              android:textColor="@color/text_gray_dark"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_part"
+            android:layout_toLeftOf="@+id/tv_part"
+            android:text="1000"
+             android:textColor="@color/text_gray_dark"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_sell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_part"
+            android:layout_toLeftOf="@+id/tv_number"
+            android:text="已售"
+             android:textColor="@color/text_gray_dark"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+    <View
+       style="@style/Divider"
+        android:layout_below="@id/relativeLayout1"
+        android:layout_marginTop="@dimen/common10dp"
+        android:layout_marginLeft="@dimen/common6dp"
+       />
+
+
+</RelativeLayout>

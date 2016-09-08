@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.frame.mengma.mmframe.activities.TestCacheActicity">
+
+
+    <include
+        layout="@layout/header"
+        ></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/header_iv"
+            android:layout_width="@dimen/common80dp"
+            android:layout_height="@dimen/common80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/common16dp"
+            />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

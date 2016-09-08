@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include
+        layout="@layout/header"
+        ></include>
+
+  <TextView
+      android:layout_margin="@dimen/text_size_16sp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/location"
+      android:text="Location"
+      android:textSize="@dimen/text_size_14sp"
+      android:textColor="@color/text_gray_dark"
+      />
+
+
+
+    <Button
+        android:id="@+id/option1"
+        android:text="另一种listview，仅作参考"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common48dp" />
+
+    <Button
+        android:layout_marginTop="@dimen/common6dp"
+        android:id="@+id/option2"
+        android:text="Activity===>PushUp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common48dp" />
+    <Button
+        android:layout_marginTop="@dimen/common6dp"
+        android:id="@+id/option3"
+        android:text="Activity===>PushDowm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common48dp" />
+    <Button
+        android:layout_marginTop="@dimen/common6dp"
+        android:id="@+id/option4"
+        android:text="Activity===>SlideIn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common48dp" />
+    <Button
+        android:layout_marginTop="@dimen/common6dp"
+        android:id="@+id/option5"
+        android:text="Activity===>SlideOut"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common48dp" />
+
+    <Button
+        android:layout_marginTop="@dimen/common6dp"
+        android:id="@+id/option6"
+        android:text="经典主页"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common48dp" />
+
+</LinearLayout>

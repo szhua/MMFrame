@@ -1,0 +1,287 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground"
+    android:orientation="vertical"
+    tools:context="com.mengmaapp.vc.LoginActivity" >
+    <include
+        layout="@layout/header"
+        ></include>
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:paddingBottom="@dimen/common16dp"
+           >
+
+           <LinearLayout
+               android:id="@+id/ll_user"
+               android:layout_width="match_parent"
+               android:layout_height="42dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="10dp"
+               android:background="@drawable/round_4rad_white_shape"
+               android:orientation="horizontal" >
+
+               <TextView
+                   android:id="@+id/tv_user"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_marginLeft="10dp"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:text="账号："
+                   android:textColor="@color/text_gray_dark"
+                   android:textSize="16sp" />
+
+               <EditText
+                   android:id="@+id/et_user"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="4"
+                   android:background="@null"
+                   android:hint="手机号/用户名"
+                   android:textColor="@color/text_gray_dark"
+                   android:textColorHint="@color/text_gray"
+                   android:textSize="16sp" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/ll_pwd"
+               android:layout_width="match_parent"
+               android:layout_height="42dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="10dp"
+               android:background="@drawable/round_4rad_white_shape"
+               android:orientation="horizontal" >
+
+               <TextView
+                   android:id="@+id/tv_pwd"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_marginLeft="10dp"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:text="密码："
+                   android:textColor="@color/text_gray_dark"
+                   android:textSize="16sp" />
+
+               <EditText
+                   android:id="@+id/et_pwd"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="4"
+                   android:background="@null"
+                   android:hint="请输入密码"
+                   android:inputType="textPassword"
+                   android:textColor="@color/text_gray_dark"
+                   android:textColorHint="@color/text_gray"
+                   android:textSize="18sp"
+                   />
+
+
+
+           </LinearLayout>
+
+           <RelativeLayout
+               android:id="@+id/ll2_login"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" >
+
+               <Button
+                   android:id="@+id/login"
+                   android:layout_width="match_parent"
+                   android:layout_height="42dp"
+                   android:layout_gravity="center_horizontal"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginRight="10dp"
+                   android:layout_marginTop="30dp"
+                   android:background="@drawable/orange_button_selector"
+                   android:text="登录"
+                   android:textColor="@color/white"
+                   android:textSize="18sp" />
+
+               <TextView
+                   android:id="@+id/img_regist"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentLeft="true"
+                   android:layout_below="@+id/login"
+                   android:layout_marginLeft="12dp"
+                   android:layout_marginTop="10dp"
+                   android:gravity="center"
+                   android:text="快速注册"
+                   android:textColor="@color/normal_orange"
+                   android:textSize="16sp" />
+
+               <TextView
+                   android:id="@+id/img_forgetpwd"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_alignTop="@+id/img_regist"
+                   android:layout_marginRight="12dp"
+                   android:gravity="center"
+                   android:text="忘记密码"
+                   android:textColor="@color/normal_orange"
+                   android:textSize="16sp" />
+           </RelativeLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:orientation="horizontal" >
+
+               <RelativeLayout
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1" >
+
+                   <View
+                       style="@style/Divider"
+                       android:layout_centerVertical="true" />
+               </RelativeLayout>
+
+               <RelativeLayout
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_marginLeft="4dp"
+                   android:layout_marginRight="4dp"
+                   android:layout_weight="1" >
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerHorizontal="true"
+                       android:layout_centerVertical="true"
+                       android:text="其他功能"
+                       android:textColor="@color/text_gray_dark"
+                       android:textSize="16sp" />
+               </RelativeLayout>
+
+               <RelativeLayout
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1" >
+
+                   <View
+                       style="@style/Divider"
+                       android:layout_centerVertical="true" />
+               </RelativeLayout>
+           </LinearLayout>
+
+
+
+           <Button
+               android:id="@+id/sub1"
+               android:layout_width="match_parent"
+               android:layout_height="42dp"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="10dp"
+               android:background="@drawable/orange_button_selector"
+               android:text="tab展示"
+               android:textColor="@color/white"
+               android:textSize="18sp" />
+           <Button
+               android:id="@+id/sub2"
+               android:layout_width="match_parent"
+               android:layout_height="42dp"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="10dp"
+               android:background="@drawable/orange_button_selector"
+               android:text="轮播图展示"
+               android:textColor="@color/white"
+               android:textSize="18sp" />
+           <Button
+               android:id="@+id/sub3"
+               android:layout_width="match_parent"
+               android:layout_height="42dp"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="10dp"
+               android:background="@drawable/orange_button_selector"
+               android:text="侧滑删除"
+               android:textColor="@color/white"
+               android:textSize="18sp" />
+           <Button
+               android:id="@+id/sub4"
+               android:layout_width="match_parent"
+               android:layout_height="42dp"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="10dp"
+               android:background="@drawable/orange_button_selector"
+               android:text="分享集成"
+               android:textColor="@color/white"
+               android:textSize="18sp" />
+           <Button
+               android:id="@+id/sub5"
+               android:layout_width="match_parent"
+               android:layout_height="42dp"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="10dp"
+               android:background="@drawable/orange_button_selector"
+               android:text="侧滑菜单"
+               android:textColor="@color/white"
+               android:textSize="18sp" />
+
+           <Button
+               android:id="@+id/sub6"
+               android:layout_width="match_parent"
+               android:layout_height="42dp"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="10dp"
+               android:background="@drawable/orange_button_selector"
+               android:text="通用下拉刷新"
+               android:textColor="@color/white"
+               android:textSize="18sp" />
+           <Button
+               android:id="@+id/sub7"
+               android:layout_width="match_parent"
+               android:layout_height="42dp"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="10dp"
+               android:background="@drawable/orange_button_selector"
+               android:text="通用菜单显示"
+               android:textColor="@color/white"
+               android:textSize="18sp" />
+
+           <Button
+               android:id="@+id/sub8"
+               android:layout_width="match_parent"
+               android:layout_height="42dp"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="10dp"
+               android:background="@drawable/orange_button_selector"
+               android:text="进入主界面"
+               android:textColor="@color/white"
+               android:textSize="18sp" />
+
+       </LinearLayout>
+
+
+   </ScrollView>
+
+
+
+</LinearLayout>

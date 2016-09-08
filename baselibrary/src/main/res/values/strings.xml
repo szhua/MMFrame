@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">BaseLibrary</string>
+
+    <string name="listfooterview_normal">查看更多</string>
+    <string name="listfooterview_ready">松开载入更多</string>
+</resources>

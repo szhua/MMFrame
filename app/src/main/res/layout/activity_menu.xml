@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.frame.mengma.mmframe.activities.MenuActivity">
+
+
+    <include
+        layout="@layout/header"
+        android:id="@+id/header"
+        ></include>
+   <LinearLayout
+       android:layout_below="@id/header"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       >
+
+       <Button
+           android:id="@+id/sub1"
+           android:layout_width="match_parent"
+           android:layout_height="42dp"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginTop="10dp"
+           android:background="@drawable/orange_button_selector"
+           android:text="Dialog式"
+           android:textColor="@color/white"
+           android:textSize="18sp" />
+       <Button
+           android:id="@+id/sub2"
+           android:layout_width="match_parent"
+           android:layout_height="42dp"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginTop="10dp"
+           android:background="@drawable/orange_button_selector"
+           android:text="自下向上式"
+           android:textColor="@color/white"
+           android:textSize="18sp" />
+       <Button
+           android:id="@+id/sub3"
+           android:layout_width="match_parent"
+           android:layout_height="42dp"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginTop="10dp"
+           android:background="@drawable/orange_button_selector"
+           android:text="平滑式"
+           android:textColor="@color/white"
+           android:textSize="18sp" />
+       <Button
+           android:id="@+id/sub4"
+           android:layout_width="match_parent"
+           android:layout_height="42dp"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginTop="10dp"
+           android:background="@drawable/orange_button_selector"
+           android:text="动画效果式"
+           android:textColor="@color/white"
+           android:textSize="18sp" />
+
+       <Button
+           android:id="@+id/sub5"
+           android:layout_width="match_parent"
+           android:layout_height="42dp"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginTop="10dp"
+           android:background="@drawable/orange_button_selector"
+           android:text="布局式弹出1"
+           android:textColor="@color/white"
+           android:textSize="18sp" />
+       <Button
+           android:id="@+id/sub6"
+           android:layout_width="match_parent"
+           android:layout_height="42dp"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginTop="10dp"
+           android:background="@drawable/orange_button_selector"
+           android:text="布局式弹出2"
+           android:textColor="@color/white"
+           android:textSize="18sp" />
+       <Button
+           android:id="@+id/sub7"
+           android:layout_width="match_parent"
+           android:layout_height="42dp"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginTop="10dp"
+           android:background="@drawable/orange_button_selector"
+           android:text="布局式弹出3"
+           android:textColor="@color/white"
+           android:textSize="18sp" />
+
+
+
+   </LinearLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/translucent"
+        android:id="@+id/menu1"
+        android:clickable="true"
+        android:visibility="gone"
+        >
+
+
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/childMenu"
+            >
+
+            <Button
+                android:id="@+id/tab1"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/orange_button_selector"
+                android:text="Dialog式"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+            <Button
+                android:id="@+id/tab2"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/orange_button_selector"
+                android:text="自下向上式"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+            <Button
+                android:id="@+id/tab3"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/orange_button_selector"
+                android:text="平滑式"
+                android:layout_marginBottom="@dimen/common16dp"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/translucent"
+        android:id="@+id/menu2"
+        android:visibility="gone"
+        android:clickable="true"
+        >
+
+        <RelativeLayout
+
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common200dp"
+            android:orientation="vertical"
+
+            >
+
+            <Button
+                android:id="@+id/tab"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/orange_button_selector"
+                android:text="Dialog式"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

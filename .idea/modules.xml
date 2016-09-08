@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FlycoTabLayout_Lib/FlycoTabLayout_Lib.iml" filepath="$PROJECT_DIR$/FlycoTabLayout_Lib/FlycoTabLayout_Lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MMFrame.iml" filepath="$PROJECT_DIR$/MMFrame.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/asynchttp/asynchttp.iml" filepath="$PROJECT_DIR$/asynchttp/asynchttp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baselibrary/baselibrary.iml" filepath="$PROJECT_DIR$/baselibrary/baselibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dialogplus/dialogplus.iml" filepath="$PROJECT_DIR$/dialogplus/dialogplus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pull_to_refresh_library/pull_to_refresh_library.iml" filepath="$PROJECT_DIR$/pull_to_refresh_library/pull_to_refresh_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/slidingMenu/slidingMenu.iml" filepath="$PROJECT_DIR$/slidingMenu/slidingMenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/um/um.iml" filepath="$PROJECT_DIR$/um/um.iml" />
+    </modules>
+  </component>
+</project>
